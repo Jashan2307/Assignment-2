@@ -1,0 +1,131 @@
+/*--Jashanpreet Singh--*/
+html {
+    font-size: 15px; 
+}
+
+body {
+    font: 1rem Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background: linear-gradient(to right, green, blue);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1, h2 {
+    color: white;
+   
+}
+
+footer p {
+    font-size: 0.8em;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+ul, a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+aside {
+    padding: 20px;
+    margin: 10px;
+    background: url('../images/bhagat\ 1.webp');  
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        flex-direction: row;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    main {
+        flex: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    aside {
+        background: url('../images/image1.jpg');
+    }
+
+  
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    aside {
+        background: url('../images/image2.jpg');
+    }
+
+   
+}
